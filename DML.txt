@@ -1,0 +1,18 @@
+DML komandaları hansılardır nümunə verərək izah edin.
+DML (İng. Data Manipulation Language – “Verilənlərin Emalı Dili” )
+Verilənlər bazasının obyektlərinin emalı üçün nəzərdə tutulub. Bəzi nümunələr:
+
+SELECT – verilənlər bazasından məlumat almaq;
+SELECT `avto_ID`, `marka`, `model`, `qiymeti`, `ili`, `region`, `muherrik`, `yurus` FROM `avto`
+
+INSERT – cədvələ verilənlər daxil etmək;
+INSERT INTO `avto`(`avto_ID`, `marka`, `model`, `qiymeti`, `ili`, `region`, `muherrik`, `yurus`)
+VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8])
+
+UPDATE – cədvəldə verilənləri dəyişmək;
+UPDATE `avto` SET `avto_ID`=[value-1],`marka`=[value-2],`model`=[value-3],`qiymeti`=[value-4],`ili`=[value-5],`region`=[value-6],`muherrik`=[value-7],`yurus`=[value-8]
+
+DELETE – cədvəldə olan verilənləri silmək; verilənlərin yazılması üçün təyin olunmuş sətirlər yerində qalır;
+DELETE FROM `avto` WHERE some_column=some_value;
+
+MERGE –  cədvələ  digər cədvəldən verilənlər daxil etmək və ya dəyişmək;
